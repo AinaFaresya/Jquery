@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Contoh jQuery</title>
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <script>
+    $(document).ready(function() {
+      // Menetapkan kandungan HTML
+      $('#info').html('<p>Kandungan Baru</p>');
+
+      // Menetapkan gaya CSS
+      $('#info').css('color', 'blue');
+
+      // Menyembunyikan elemen apabila butang diklik
+      $('#hideButton').click(function() {
+        $('#info').hide();
+      });
+
+      // Menunjukkan elemen apabila butang diklik
+      $('#showButton').click(function() {
+        $('#info').show();
+      });
+
+      // Menambah kandungan pada akhir elemen
+      $('#info').append('<p>Perenggan tambahan</p>');
+    });
+  </script>
+</head>
+<body>
+  <div id="info">Kandungan asal</div>
+  <button id="hideButton">Sembunyikan</button>
+  <button id="showButton">Tunjukkan</button>
+</body>
+</html>
